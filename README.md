@@ -7,7 +7,7 @@ def test_distinct(data):
 
 print (test_distinct([1,5,7,9]))
 print(len([1,5,7,9]))
-print(len(([])))
+print(len(([1,5,7,9])))
 
 
 
