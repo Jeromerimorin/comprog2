@@ -1,0 +1,12 @@
+word1 = "listen"
+word2 = "silent"
+
+def not_anagram(data1,data2):
+    if len (data1) != len(data2):
+     return False
+    if sorted(data1)==sorted(data2):
+     return True
+    else:
+      return False
+    
+print("Anagram", not_anagram(word1,word2))
