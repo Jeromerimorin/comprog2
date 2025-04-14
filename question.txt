@@ -1,0 +1,24 @@
+FILENAME = "question.txt"
+
+def add_question():
+    question = input ("add a question")
+    options=[]
+    for i in range(4):
+        option = input (f"enter option {chr(65+i)}")
+        options.append(option)
+
+
+    answer = input ("Enter answer A/B/C/D").upper()
+
+
+
+    questions_dict = {
+        "question": question,
+        "options": option,
+        "answer": answer,
+    }
+    with open(FILENAME, "a") as file:
+        file.write(str(questions_dict) + "\n")
+
+
+add_question()
