@@ -1,0 +1,15 @@
+f = open("demofile.txt","a")
+f.write("the quixk brown fox jump over the laazy dog.")
+f.close()
+import os
+print(os.getcwd())
+f= open("demofile.txt","r")
+print(f.read())
+os.remove("demofile.txt")
+f.close
+f.close()
+os.remove("demofile.txt")
+print(f.read())
+print(f.read())
+f=open("demofile.txt", "r")
+os.path.exists("demofile.txt")
